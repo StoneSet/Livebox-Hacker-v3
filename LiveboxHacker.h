@@ -1,5 +1,5 @@
 // Wifi hack Livebox V.3
-// By TheValentin61
+// By StoneSet
 // OPEN SOURCE !
 
 int pinboutton = 2;    // bouton 1
@@ -41,7 +41,7 @@ void loop() {
     delay(1000);              // Attendre pendant une seconde
     }
   
-    if( Serial.available() )       // Si le data est sûr read
+    if( Serial.available() )       // Si le data est sÃ»r read
   {;}
     val = Serial.read();         // Lire et stocker dans 'val'
  
@@ -54,7 +54,7 @@ void loop() {
     digitalWrite(7, LOW);    
     delay(3000); 
  
-  // Si le bouton1 est pressé le moteur va tourner dans un sens
+  // Si le bouton1 est pressÃ© le moteur va tourner dans un sens
   if (digitalRead(pinboutton) == HIGH) {
     digitalWrite(moteur1Pin1, LOW);   // mettre le pin 2 en LOW
     delay(2500);
@@ -68,14 +68,14 @@ void loop() {
     digitalWrite(moteur1Pin2, LOW);   // mettre le pin 2 en LOW
     delay(2500);
 
-    digitalWrite(6, HIGH); //Led processus terminé  "FIN"
+    digitalWrite(6, HIGH); //Led processus terminÃ©  "FIN"
     delay(3000);              // Attendre pendant une seconde
     digitalWrite(6, LOW);    
     delay(3000); 
   }
     {
 
-       if( Serial.available() )       // Si le data est sûr read
+       if( Serial.available() )       // Si le data est sÃ»r read
   {;}
     val = Serial.read();         // Lire et stocker dans 'val'
  
